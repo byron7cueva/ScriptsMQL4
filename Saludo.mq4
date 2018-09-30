@@ -13,7 +13,16 @@
 void OnStart()
   {
 //---
+   //Declarando variables
+   string mensaje = "Hola";
+   string nombre;
+   nombre = "Byron";
    //Imprimir un mensaje en grafico
-   Comment("Hola mundo");
+   Comment(mensaje + " " + nombre);
+   //imprintAlert();
   }
 //+------------------------------------------------------------------+
+void imprintAlert(){
+   //Imprimir una alerta en pantalla
+   Alert("Hola");
+}
