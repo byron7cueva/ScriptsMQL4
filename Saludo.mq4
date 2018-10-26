@@ -14,14 +14,19 @@ void OnStart()
   {
 //---
    //Declarando variables
+   int numero1 = 1;
+   int numero2 = 2;
    string mensaje = "Hola";
    string nombre;
    nombre = "Byron";
    //Imprimir un mensaje en grafico
-   Comment(mensaje + " " + nombre);
+   Comment(mensaje + " " + nombre + (numero1 + numero2));
    //imprintAlert();
   }
-//+------------------------------------------------------------------+
+
+/*
+   Este es un ejemplo imprimiendo una aletrta en pantalla
+*/
 void imprintAlert(){
    //Imprimir una alerta en pantalla
    Alert("Hola");
