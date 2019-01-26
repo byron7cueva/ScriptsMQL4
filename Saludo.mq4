@@ -3,12 +3,12 @@
 //|                                     Copyright 2018, byron7cueva. |
 //|                                            byron7cueva@gmail.com |
 //+------------------------------------------------------------------+
-#property copyright "Copyright 2018, byron7cueva."
-#property link      "byron7cueva@gmail.com"
-#property version   "1.00"
+#property copyright "Copyright 2018, byron7cueva." //Informacion copyright del autor
+#property link      "byron7cueva@gmail.com" //Link de referencia del autor
+#property version   "1.00" //Version del script
 #property strict
 //+------------------------------------------------------------------+
-//| Script program start function                                    |
+//| Metodo donde inicia la ejecucion del script                      |
 //+------------------------------------------------------------------+
 void OnStart()
   {
