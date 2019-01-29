@@ -13,10 +13,10 @@
 void OnStart()
   {
 //---
-      //MarketInfo permite obtener la informacion de un par
+      double propiedad = 0;
+       //MarketInfo permite obtener la informacion de un par
       //El primer parametro permite indicar que par se va obtener la informacion, al indicarle NULL se indica que se va obtener informacion del par que muestra al aplicar el script
       //El segundo parametro esxite algunas opciones de informacion las cuales inician con MODE
-      double propiedad = 0;
       propiedad = MarketInfo(NULL, MODE_ASK); //Obteniendo el precio ask
       Comment("ASK=",propiedad, "\n");
       

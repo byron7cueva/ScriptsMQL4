@@ -9,8 +9,9 @@
 #property strict
 #property script_show_inputs
 
-//Per
+//extern es lo mismo que input, pero este si permite modificar el valor de la variable
 extern int a = 10; //Primer numero
+
 input int b = 2; //Segundo numero
 
 //Lista de datos

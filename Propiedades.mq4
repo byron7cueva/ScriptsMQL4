@@ -8,6 +8,8 @@
 #property version   "1.00"
 #property strict
 //Indicando la necesidad de mostrar inputs para solicitar datos al usuario
+//Sin esta linea el script no solicitara los input al cargarlo en el grafico
+//Solo aplica a los scripts
 #property script_show_inputs
 //Indicando la descripcion en el tag about
 #property description "Este es un escript de prueba, solo necesitas asignar una valor a la variable solicitada"
@@ -17,41 +19,42 @@
 
 //Variable para solicitud de informacion al usuario
 //Input para solicitar texto, Al lado del input es el texto que se pone en la pantalla
-input string comentario = "Pon algo aqui"; //Comentario
-//Variable tipo boobleano
-input bool tieneColor = false;
+input string comentario="Pon algo aqui"; //Comentario
+                                         //Variable tipo boobleano
+input bool tieneColor=false;
 //Entero mas pequeno
 //Input para solicitar un numero entero
-input int numeroEntero = 0; //Numero entero
-input short numeroPequeno = 123; //Numero pequeno
-//Input para solicitar un numero flotante
-input float numeroDecimal = 1.0000;
+input int numeroEntero=0; //Numero entero
+input short numeroPequeno=123; //Numero pequeno
+                               //Input para solicitar un numero flotante
+input float numeroDecimal=1.0000;
 //Inpput para solicitar un numero double
-input double precio = 1.000;
+input double precio=1.000;
 //Solicitando un color, todos los colores inicia en clr
-input color colorFavorito = clrBlueViolet;
+input color colorFavorito=clrBlueViolet;
 //Solicitando fecha
+//Se asigna por defecto la fecha mas antigua que puede manejar el metatrader
 input datetime fechaActual;
 //Solicitando un entero grande
-input long enteroGrande = 1;
+input long enteroGrande=1;
 //Maneja un numero mas grande que long pero sin simbolo
-input ulong dobleGrande = 2;
+input ulong dobleGrande=2;
 
-string comentario2 = "Segundo comentario";
+string comentario2="Segundo comentario";
 //+------------------------------------------------------------------+
-//| Script program start function                                    |
+//| Esta funcion solo se utiliza en scripts, para iniciar el mismo                                    |
 //+------------------------------------------------------------------+
 void OnStart()
   {
 //---
-   //Las variables que se encuentran como input no se puede cambiar su valor
-   string texto = "hola";
-   texto = "buenos dias";
-   char letra = "a";
-   uchar texto = "Prueba texto";
-   ushort numero = 10; //Numero mayor que short sin signo
-   uint numeroEnteroGrande = 20; //Numero entero mas grande que int sin digno
-   //Imprimienfo comentario
+//Las variables que se encuentran como input no se puede cambiar su valor
+   string texto="hola";
+   texto="buenos dias";
+   char letra="a";
+   uchar texto="Prueba texto";
+   ushort numero=10; //Numero mayor que short sin signo
+   uint numeroEnteroGrande=20; //Numero entero mas grande que int sin digno
+                               //Imprimienfo comentario
    Comment(comentario);
   }
 //+------------------------------------------------------------------+
